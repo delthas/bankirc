@@ -33,7 +33,6 @@ func runBank() error {
 	go func() {
 		for {
 			for _, account := range cfg.Accounts {
-				fmt.Println(account.Name, account.Bank)
 				res, err := c.GetAccountTransactions(account.ID)
 				if err != nil {
 					log.Printf("getting transactions for %v: %v", account.Name, err)
