@@ -1,0 +1,11 @@
+# client_id is your Nordigen application client ID.
+client_id: ""
+# client_secret is your Nordigen application client ID.
+client_secret: ""
+# irc_server is the hostname:port of the IRC server to connect to.
+# To connect with TLS, use e.g. example.com:+6697
+irc_server: "example.com:+6697"
+# irc_channel is the channel to connect to, including the # prefix.
+irc_channel: '#bank'
+# irc_nick is the nick to connect as.
+irc_nick: bankirc
