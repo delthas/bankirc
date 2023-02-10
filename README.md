@@ -2,6 +2,14 @@
 
 A simple IRC bot that posts bank account transactions to a (private) IRC channel.
 
+Example log after letting the bot run for a week:
+```
+<bankirc> foobark: 2022-11-15: -300.0 EUR: VIR INST COOL
+<bankirc> foobark: 2022-11-17: 10.16 EUR: BAGUETTELAND
+<bankirc> foobark: 2022-11-17: -17.5 EUR: CB ONLY ELECTRIC FANS
+<bankirc> coolbank: 2022-11-18: -300 EUR: VIR VIREMENT OBAMAS
+```
+
 ## Why?
 
 I have several bank accounts. I'd like to have a centralized place where I can look up all my past bank transactions
@@ -24,7 +32,7 @@ Then, for each of the bank accounts you want to add:
   - `<id>` is the bank ID from above
   - `<name>` is the friendly bank name you want to give, which will be displayed in transaction messages
 
-Then, run: `go run ./cmd/bankirc`
+Then, run: `go run ./cmd/bankirc`. New transactions will be copied to the IRC channel over time.
 
 ## Background
 
